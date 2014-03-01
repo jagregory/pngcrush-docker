@@ -17,5 +17,5 @@ docker run jagregory/pngcrush
 A `/source` directory is created in the container, which can be mapped for use with relative file paths. pngcrush will always be run from the `/source` directory in the container.
 
 ```sh
-docker run -v `pwd`:/source input.png output.png
+docker run -v `pwd`:/source jagregory/pngcrush input.png output.png
 ```
